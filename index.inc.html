@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+	<title>המדור לחיפוש דירות | דירות להשכרה</title>
+
+	<!--link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"-->
+	<link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen"/>
+	<link href="css/index.css" type="text/css" rel="stylesheet" media="screen"/>
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+
+	<meta property="og:title" content="המדור לחיפוש דירות" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="<?php echo AppInfo::getUrl('/'); ?>" />
+	<meta property="og:image" content="<?php echo AppInfo::getUrl('/images/logo.png'); ?>" />
+	<meta property="og:site_name" content="המדור לחיפוש דירות" />
+	<meta property="og:description" content="הדרך החכמה למצוא דירות להשכרה" />
+	<meta property="fb:app_id" content="<?php echo AppInfo::appID(); ?>" />
+
+</head>
+<body>
+
+
+	<div id="index-banner" class="parallax-container">
+		<div class="parallax"><img src="images/wall-416060_1280.jpg" alt="המדור לחיפוש דירות"></div>
+	</div>
+
+
+	<div class="container">
+		<div class="section">
+			
+			<div class="row">
+				<div class="col s12 center" style="">
+					<h1>המדור לחיפוש דירות</h1>
+					<p>
+					הדרך החכמה למצוא דירה להשכרה.
+					</p>
+					<div class="Table">
+						<div class="Row">
+							<div class="Cell">
+								הצג
+							</div>
+							<div class="Cell">
+								<select class="select_subject valign" id="select_type">
+									<option value="apartments" selected="selected">דירות</option>
+									<!--<option value="stuff">חפצים ורהיטים</option>-->
+								</select>
+							</div>
+						</div>
+
+						<div class="Row">
+							<div style="" class="Cell">
+								באזור
+							</div>
+							<div class="Cell">
+								<select class="select_subject" id="select_city">
+									<option value="jerusalem" class="en_apartments en_stuff" selected="selected">ירושלים</option>
+									<option value="telaviv" class="en_apartments">תל אביב</option>
+									<option value="gd" class="en_apartments">גוש דן (ללא ת"א)</option>
+									<option value="haifa" class="en_apartments en_stuff">חיפה</option>
+									<option value="beersheba" class="en_apartments en_stuff">באר שבע</option>
+									<option value="modiin" class="en_apartments en_stuff">מודיעין</option>
+								</select>
+							</div>
+						</div>
+						
+						<div class="Row">
+							<div class="Cell">
+							</div>
+							<div class="Cell">
+								<button class="waves-effect waves-light btn-large green" id="search">חיפוש</button>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+
+	<div class="parallax-container valign-wrapper">
+		<div class="parallax"><img src="images/room-416043_1280.jpg" alt="המדור לחיפוש דירות"></div>
+	</div>
+	
+	<div class="container">
+		<div class="section">
+
+		  <div class="row">
+			<div class="col s12" id="about" style="">
+					<img class="benefit-image hide-on-small-and-down" src="images/message2.png" alt="המדור לחיפוש דירות">
+				    <p>
+					אז הגיע הזמן לחפש דירה, ונכון שאפשר להשתמש בלוחות המסורתיים, אבל בימינו ממילא כל הדירות
+					השוות מתפרסמות בפייסבוק, בין חברים ובקבוצות ייעודיות. איפה הבעיה? הבעיה היא שיש מליון קבוצות
+					שונות בכל עיר, שכל תגובה או לייק מקפיצים הודעה שכבר קראתם, שאתם צריכים לקרוא שוב ושוב
+					את אותה הודעה בקבוצות שונות, שאי אפשר לחפש ולסנן הודעות ובקיצור - שהפייסבוק הוא פלטפורמה 
+					מעולה לשיתוף מידע, אבל בטח לא פלטפורמה שתפורה במיוחד עבור חיפוש דירות.
+					</p>
+					<p>
+					"המדור לחיפוש דירות" מנסה לגשר על הפער הזה, ולהפוך את חווית חיפוש הדירות בפייסבוק לנוחה יותר,
+					יעילה יותר, מהירה יותר וחכמה יותר. "המדור" מרכז את ההודעות מכל הקבוצות השונות ברשימה אחת, 
+					מסנן כפילויות, ממיין, מסמן הודעות חדשות מול הודעות שנקראו כבר, מדגיש מילות מפתח ומאפשר 
+					לצפות במיקומים על גבי מפה.
+					<!-- בנוסף, הוא מאפשר להתחבר עם חשבון הפייסבוק, וכך לצפות בתוכן
+					של קבוצות סגורות (כמובן שלשם כך תצטרכו להיות חברים בקבוצה כזו), והוא מציג רשימה של כל הקבוצות
+					הקיימות כדי שתדעו לאן עוד ניתן להצטרף.-->
+					 בנוסף, הוא מאפשר להתחבר עם חשבון הפייסבוק, וכך לסנכרן את ההודעות שקראתם בעבר
+					 בין מחשבים שונים, והוא מותאם לחלוטין לסמארטפון, כדי שחלילה לא תפספסו את דירת
+					 חלומותיכם גם אם אתם בדרכים.
+					</p>
+
+				</div>
+		  </div>
+
+		</div>
+	  </div>
+	  
+	<div class="parallax-container valign-wrapper">
+		<div class="parallax"><img src="images/room-416049_1280.jpg" alt="המדור לחיפוש דירות"></div>
+	</div>
+
+	<div class="container">
+		<div class="section">
+			<div class="row">
+				<div class="col s12 m4">
+					<div class="icon-block">
+						<h2 class="center brown-text"><i class="material-icons">&#xE563;</i></h2>
+						<h5 class="center">כל הדירות במקום אחד</h5>
+
+						<p class="light">
+						"המדור לחיפוש דירות" מושך הודעות מקבוצות הפייסבוק הפופולריות העוסקות בדירות להשכרה ומציג רשימה מרוכזת ומאוחדת של כל הדירות במקום אחד. במקום לעבור על ההודעות בכל קבוצה וקבוצה, אפשר לקבל הכל במרוכז וללא מאמץ.
+						</p>
+					</div>
+				</div>
+
+				<div class="col s12 m4">
+					<div class="icon-block">
+						<h2 class="center brown-text"><i class="material-icons">&#xE192;</i></h2>
+						<h5 class="center">מיון יעיל</h5>
+
+						<p class="light">
+						"המדור לחיפוש דירות" ממיין את ההודעות לפי תאריך הפרסום המקורי של ההודעה, ולא לפי תאריך התגובה האחרונה. כך יוצא שהודעות חדשות תמיד מוצגות לפני הודעות ישנות, ולכן אתם יכולים לעבור על הודעות חדשות לפי הסדר לפני שאתם מגיעים להודעות ישנות שראיתם בעבר.
+						</p>
+					</div>
+				</div>
+
+				<div class="col s12 m4">
+					<div class="icon-block">
+						<h2 class="center brown-text"><i class="material-icons">&#xE55C;</i></h2>
+						<h5 class="center">זיהוי מיקומים</h5>
+						<p class="light">
+						"המדור לחיפוש דירות" יודע לזהות מיקומים וכתובות הכלולים בתוכן ההודעות, והוא מאפשר לצפות במיקומים אלו על גבי מפה. כך, תוכלו לקבל מושג טוב יותר היכן ממוקמת הדירה הרלוונטית, והאם היא קרובה למוקדי העניין שלכם.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="parallax-container valign-wrapper">
+		<div class="parallax"><img src="images/fireplace-416042_1280.jpg" alt="המדור לחיפוש דירות"></div>
+	</div>
+
+	<div class="container">
+		<div class="section">
+			<div class="row">
+				<div class="col s12 m4">
+					<div class="icon-block">
+						<h2 class="center brown-text"><i class="material-icons">&#xE3E7;</i></h2>
+						<h5 class="center">סריקה מהירה</h5>
+
+						<p class="light">
+						"המדור לחיפוש דירות" מסייע לסרוק את ההודעות במהירות וביעילות. זאת, על ידי הדגשת מילות מפתח, סינון הודעות לפי מילות חיפוש, איחוד והסתרת הודעות כפולות, חסימת הודעות של ספאמרים, בחירה ידנית של הקבוצות המוצגות ועוד... 
+						</p>
+					</div>
+				</div>
+				
+				<div class="col s12 m4">
+					<div class="icon-block">
+						<h2 class="center brown-text"><i class="material-icons">&#xE530;</i></h2>
+						<h5 class="center">מסלול תחבורה ציבורית</h5>
+
+						<p class="light">
+						"המדור לחיפוש דירות" מאפשר לכם לקבוע יעד כלשהו על גבי המפה (למשל: האוניברסיטה שלכם) עבור "מסלול תחבורה ציבורית". לאחר מכן, הוא מאפשר לכם לצפות במסלול המשוער מהדירה ועד ליעד, כך שתוכלו לבחון את זמן הנסיעה ואת מספר הקווים שיש להחליף.
+						</p>
+					</div>
+				</div>
+
+
+				<div class="col s12 m4">
+					<div class="icon-block">
+						<h2 class="center brown-text"><i class="material-icons">&#xE838;</i></h2>
+						<h5 class="center">הודעות מועדפות</h5>
+						<p class="light">
+						מצאתם דירה מעניינת? ראיתם הודעה שתרצו לחזור אליה בעתיד? "המדור לחיפוש דירות" מאפשר לכם לסמן הודעות מועדפות ולחזור אליהן בעתיד - כדי לראות אם משהו התעדכן בתגובות או כדי ליצור קשר עם בעל הדירה לפרטים נוספים.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="parallax-container valign-wrapper">
+		<div class="parallax"><img src="images/homes-for-sale-326987_1920.jpg" alt="המדור לחיפוש דירות"></div>
+	</div>
+
+	<footer class="page-footer teal">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text">המדור לחיפוש דירות</h5>
+					<p class="grey-text text-lighten-4">המדור לחיפוש דירות סורק קבוצות פופולריות בפייסבוק שעוסקות בדירות להשכרה ומציג רשימה מרוכזת של הודעות רלוונטיות. "המדור לחיפוש דירות" - הדרך החכמה למצוא דירה להשכרה.</p>
+
+
+				</div>
+				<div class="col l3 s12" >
+					<h5 class="white-text">דירות להשכרה</h5>
+					<ul>
+						<li><a class="white-text" href="/?city=jerusalem">דירות להשכרה בירושלים</a></li>
+						<li><a class="white-text" href="/?city=telaviv">דירות להשכרה בתל אביב</a></li>
+						<li><a class="white-text" href="/?city=gd">דירות להשכרה בגוש דן</a></li>
+						<li><a class="white-text" href="/?city=haifa">דירות להשכרה בחיפה</a></li>
+						<li><a class="white-text" href="/?city=beersheba">דירות להשכרה בבאר שבע</a></li>
+						<li><a class="white-text" href="/?city=modiin">דירות להשכרה במודיעין</a></li>
+					</ul>
+				</div>
+				<!--
+				<div class="col l3 s12">
+					<h5 class="white-text">חפצים ורהיטים למכירה</h5>
+					<ul>
+						<li><a class="white-text" href="/?city=jerusalem&amp;type=stuff">חפצים ורהיטים למכירה בירושלים</a></li>
+						<li><a class="white-text" href="/?city=haifa&amp;type=stuff">חפצים ורהיטים למכירה בחיפה</a></li>
+						<li><a class="white-text" href="/?city=beersheba&amp;type=stuff">חפצים ורהיטים למכירה בבאר שבע</a></li>
+					</ul>
+				</div>
+				-->
+			</div>
+		</div>
+		<div class="footer-copyright">
+			המדור לחיפוש דירות - דירות להשכרה
+			 | <a class="white-text" href="/?city=jerusalem#!about">אודות</a>
+			 | <a class="white-text" href="/?city=jerusalem#!privacy">מדיניות הפרטיות</a>
+		</div>
+	</footer>
+
+
+	<!--	Scripts-->
+	<!--script src="https://code.jquery.com/jquery-2.1.1.min.js"></script-->
+	<script type="text/javascript" src="/cache/1/javascript/jquery-1.7.1.min.js"></script>
+	<script>
+	$("head").append('<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">');
+	(function($){
+		$(function(){
+
+			$('.button-collapse').sideNav();
+			$('.parallax').parallax();
+
+		});
+	})(jQuery);
+	
+	$("#select_type").change(function(){
+		if ($( "#select_type" ).val() == "apartments")
+		{
+			
+			$("#select_city option").hide();
+			$(".en_apartments").show();
+			$("#select_city option:visible:first").prop('selected', true);
+		}
+		else
+		{
+			$("#select_city option").hide();
+			$(".en_stuff").show();
+			$("#select_city option:visible:first").prop('selected', true);
+		}
+	});
+	
+	$("#search").click(function(){
+		window.location.href = "/?city=" + $( "#select_city" ).val() + "&type=" + $( "#select_type" ).val();
+	});
+	 </script>
+
+	<script src="javascript/materialize.min.js" type="text/javascript"></script>
+	<script src="javascript/SmoothScroll.min.js" type="text/javascript"></script>
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments);},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m);
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-44383757-1', 'dirot2.com');
+	  ga('send', 'pageview');
+
+	</script>
+	</body>
+</html>
