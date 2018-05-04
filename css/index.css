@@ -1,0 +1,140 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #white;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 440px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+	#index-banner .section {
+		top: 0;
+	}
+
+	footer.page-footer li {
+		margin: 6px 0;
+	}   
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ltr {
+	direction: ltr;
+}
+
+.Table
+{
+	display: table;
+	font-size: 20px; 
+	margin: 10px auto;
+}
+	
+.Row
+{
+	display: table-row;
+}
+.Cell
+{
+	display: table-cell;
+	vertical-align: middle;
+	padding: 10px;
+}
+
+.material-icons {
+	direction: ltr;
+}
+
+.select_subject {
+	display: block; 
+	background: #26a69a; 
+	color: white;
+	min-width: 175px;
+}
+
+.footer-copyright {
+	padding-right: 20px;
+}
+
+h1 {
+	font-size: 2em; 
+	margin: 10px
+}
+
+#search {
+	width: 100%;
+}
+
+#about {
+	font-size: 20px;
+}
+
+#about img {
+	margin: 20px 10px; 
+	float: left; 
+	min-width: 300px; 
+	width: 45%;
+}
+
+
+html {
+	font-family: GillSans, Calibri, Trebuchet, sans-serif;
+}
+
+body {
+	background-color: #f6f7f1;
+    background-image: url("/images/bg.jpg");
+}

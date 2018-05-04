@@ -1,0 +1,386 @@
+[class*="foundicon-"]:after { 
+	position: relative; 
+	top: -8px; 
+	left: 10px; 
+	color: #888; 
+	font-size: 60%; 
+	font-style: normal; 
+}
+
+.foundicon-settings:after { 
+	content: "settings"; 
+}
+
+body {
+	background-image: url('/images/bg.jpg');
+	background-color: #f6f7f1;
+}
+
+.menu_message {
+	color:Gray;
+	vertical-align:6px;
+	padding-right: 5px;
+	line-height: 45px;
+}
+
+#menu_dropdown label {
+	font-size: 0.8em;
+}
+
+#menu_left a:hover {
+	background: gray;
+}
+
+.locationLink {
+	color: orange;
+	text-decoration: underline;
+}
+
+.post_details {
+	width: 95%;
+	margin: 3px auto;
+}
+
+.post_details .link_to_FB {
+	ont-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+.post_details th {
+	width: 130px;
+}
+
+#transportation_dest {
+	width: 300px;
+	margin: 10px 0;
+}
+
+#transportation_message {
+	text-align: center;
+}
+
+.post_comments li {
+	margin-bottom: 10px;
+}
+
+#num_posts {
+	font-size:0.9em;
+	color:rgb(0, 68, 85);
+	font-weight:normal;
+	margin-bottom:10px;
+	margin-bottom:20px;
+	line-height: 20px;
+	display: none;
+}
+
+#about ul {
+	margin-right: 30px;
+}
+
+.post {
+	margin-bottom:25px;
+	border: 1px #D5DADF solid;
+	padding:15px 10px;
+	/*overflow: hidden;*/
+	position: relative;
+}
+
+#sideBar h4 {
+	color:rgb(0, 68, 85);
+}
+
+#sideBar p, #sideBar ul {
+	color:rgb(73, 99, 105);
+}
+
+#sideBar ul {
+	margin-right: 1.5em;
+}
+
+#groupListUl {
+	list-style-type: none;
+}
+
+#groupListUl li {
+	margin: 3px 0px;
+	clear: both;
+}
+
+#groupListUl label, .menuSectionWithCB label {
+	color:rgb(73, 99, 105);
+	font-size: 1em;
+	padding-right: 28px; 
+	display: block;
+}
+
+#groupListUl input, .menuSectionWithCB input {
+	float:right;
+	position: relative;
+	top: 7px;
+}
+
+#allGroupsUl li {
+	margin-bottom: 9px;
+}
+
+.postPhotos {
+	min-height:115px;
+}
+
+#profilePicDiv {
+	background-image: url('/images/ajax-loader.gif');
+	background-color: #f6f7f1;
+	padding: 3px;
+	border: 1px solid gray;
+	position: absolute;
+	top: -4px;
+	right: -4px;
+	z-index: 1000000;
+	min-width: 20px;
+	min-height: 20px;
+	background-repeat: no-repeat;
+	background-position:center center; 
+}
+
+.postButtons {
+	float: left;
+	position: relative;
+}
+
+.dup .mainPostContent, .dup .postButtons {
+	display: none;
+}
+
+
+.messageFromSite {
+	background: Gainsboro ;
+	padding: 0 5px 0 0;
+}
+
+.profilePic {
+	float: right;
+	margin: 0 0 5px 10px;
+	padding: 5px;
+	position: relative;
+}
+
+.postUser {
+	/*float: right;*/
+}
+
+.postMainDetails {
+	color:rgb(97,97,97); 
+	/*float: right;*/
+	margin: 0px;
+	font-size: 14px;
+	/*width: 80%;*/
+}
+
+.postMessageSharedContent {
+	width: 97%;
+	background: AliceBlue ;
+	padding: 10px;
+	margin: 10px 10px 20px 10px;
+}
+.postMessageSharedContent p {
+	font-size: 0.8em;
+	padding: 3px;
+}
+
+.postMessageSharedContent_head {
+	margin-top: 3px;
+}
+
+.postMessageSharedContent img {
+	float: right;
+	margin: 2px 10px;
+	max-width: 155px;
+}
+
+.ltrMessage {
+	text-align: left;
+	direction: ltr;
+}
+
+.similar_comments {
+	font-size: 17px;	
+}
+
+.shadow {
+  -moz-box-shadow:    4px 4px 6px 0px #CCCCCC;
+  -webkit-box-shadow: 4px 4px 6px 0px #CCCCCC;
+  box-shadow:         4px 4px 6px 0px #CCCCCC;
+}
+
+.oldBrowser {
+	background: gray; 
+	color: Yellow; 
+	font-weight: bold; 
+	text-align: center; 
+	padding: 6px;
+}
+
+.postBackOdd {
+	background-color: #FFFFFF;
+}
+
+.postBackEven {
+	background-color: #FAFDFF;
+}
+
+.dupPost {
+	background-color: #F0F0F0;
+}
+
+.filteredOut, .filteredGroup, .filteredUser {
+	display: none;
+}
+
+
+.highlight {
+	background-color: Yellow;
+	padding: 2px 0;
+}
+
+#loadingPosts {
+	text-align: center; 
+	margin: 30px 0;
+}
+
+#showOldPosts {
+	margin-bottom: 100px; 
+	text-align: center; 
+	display: none;
+}
+
+#num_posts_message {
+	text-align: center;
+	margin: 30px 0;
+	font-weight: bold;
+	font-size: 1.2em;
+	color:rgb(97,97,97); 
+	display: none;
+}
+
+.top-bar .name h1 a {
+	width: auto;
+}
+
+#aboutWrapper, #feedbackWrapper, #mngBlockedWrapper, #privacyWrapper {
+	display: none;
+}
+
+#menu_left .active {
+	background-color: #505050;
+}
+
+.savePost {
+	margin-left: 5px;
+}
+
+.savePost a {
+	width: 22px;
+	height: 22px;
+	display: block;
+}
+
+.unsavedPost .savePost a {
+	background: transparent url('/images/star_empty.png') no-repeat center; 
+}
+
+.savedPost .savePost a {
+	background: transparent url('/images/star_full.png') no-repeat center; 
+}
+
+.savedPost 
+{
+	background: #FFFFD9;
+}
+
+.blockUser 
+{
+	/*clear: left;*/
+}
+
+body.nonmobile span.blockUser 
+{
+	margin-left: 11px;
+	/*margin-top: 7px;*/
+}
+
+body.mobile span.blockUser 
+{
+	margin-left: 5px;
+	/*margin-top: 12px;*/
+}
+
+.blockUser a {
+	width: 22px;
+	height: 22px;
+	display: block;
+	background: transparent url('/images/block_user.png') no-repeat center; 
+}
+
+.ownerComment {
+
+	color: gray;
+	font-weight: bold;
+}
+
+#app_details {
+	font-size: 0.8em;
+}
+
+#displayedSearchTerm {
+	color: gray;
+}
+
+
+#faq dt {
+	font-weight: bold;
+}
+#faq dd {
+	background:none no-repeat left top;
+	padding-right: 50px;
+}
+
+.additional_new_posts.button {
+    background-color: #5b8737;
+}
+
+div.navButtons
+{
+	position: absolute; 
+	padding: 4px; 
+	border-style: solid solid solid solid; 
+	border-width: 1px 1px 1px 1px; 
+	right: -26px; 
+	top: 13x;
+}
+
+div.postContentWrapper
+{
+	overflow: hidden;
+	padding: 1px;
+}
+
+span.postNum 
+{
+	padding: 10px; 
+	text-align: center; 
+	height: 36px; 
+	font-weight: bold; 
+	vertical-align: middle; 
+	clear: left; 
+	width: 59px; 
+	margin: 14px 7px;
+	font-size: 13px;
+}
+
+#blockedUsersSelect
+{
+	width: 80%;
+}
+
