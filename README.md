@@ -18,16 +18,29 @@ Features:
 - When logging in via Facebook, ability to sync current read location across devices
 
 At first (2013), the site allowed viewing posts from public groups, and if a user was logged in, also from closed groups which the user belonged to.
+
 At some stage (2015), Facebook blocked the ability to retrieve data from closed groups, and allowed fetching data from public groups only.
+
 Eventually (2018), Facebook blocked this ability too, therefore killing the use case.
+
 Hopefully, the ability to read posts from groups (at least public ones) will return in the future.
 
 The website was available via http://www.dirot2.com and https://home-finder.herokuapp.com/ .
 Facebook page: https://www.facebook.com/dirot2/ 
 
 ## Images
+
+### Example Post
 ![Example Post](https://raw.githubusercontent.com/Dvd848/home_finder/master/images/message2.png)
-![Example Post](https://raw.githubusercontent.com/Dvd848/home_finder/master/images/screenshots/3.png)
+
+### Search Capabilities
+![Search Posts](https://raw.githubusercontent.com/Dvd848/home_finder/master/images/screenshots/3.png)
+
+### Ability to Block Spammers
 ![Spammer Post](https://raw.githubusercontent.com/Dvd848/home_finder/master/images/screenshots/4.png)
+
+### Groups List
 ![Groups List](https://raw.githubusercontent.com/Dvd848/home_finder/master/images/screenshots/2.png)
+
+### Ability to Filter Groups
 ![Filter Groups](https://raw.githubusercontent.com/Dvd848/home_finder/master/images/screenshots/1.png)
